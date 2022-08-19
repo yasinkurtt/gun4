@@ -6,17 +6,9 @@
     margin: 0;
     font-family: "Roboto Slab, Arial", sans-serif;
     font-size: 14px;
+    background-color: rgb(255, 255, 255);
   }
-  header {
-    background-color: rgb(219, 0, 0);
-    height: 120px;
-    min-width: 120px;
-    font-family: "Italianno", cursive;
-    text-align: center;
-    color: whitesmoke;
-    align-items: center;
-    font-size: 100px;
-    
+  
   }
 header {
     background-color: rgb(219, 0, 0);
@@ -29,7 +21,15 @@ header {
     font-size: 100px;
     
   }
-  
+.baslik{
+  background-color: red;
+  width: 100%;
+  height: 40%;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Italianno", cursive;
+}
   ul {
     list-style-type: none;
     margin: 0;
@@ -77,7 +77,7 @@ footer {
     min-width: 140px;
     font-family: "Italianno", cursive;
     text-align: center;
-    color: rgb(219, 0, 0);
+    color: rgb(0, 219, 15);
     font-size: 50px;
     background-color: rgb(0, 0, 0);
     
@@ -90,9 +90,9 @@ footer {
     width: 80%;
 }
 .resim-2{
-    width: 450px;
-    height: 750px;
-   background: url(ankara.jpg);
+  margin: 5% 40%;
+    
+   
 }
 
 input[type=text],input[type=password]{
@@ -109,27 +109,26 @@ input[type=text]:focus,input[type=password]:focus{
     border-radius: 10%;
     padding-left: 100px;
 }
-div{
+.girisdiv{
     border: 5px solid black;
     margin: 3% 25%;
     background-color: rgb(101, 138, 169);
     width: 45%;
     height: 600px;
     padding-left: 8%;
+    min-width: 505px;
 }
-body{
-    background-color: rgb(228, 55, 55);
-}
+
 img{
     margin-top: 5%;
-    margin-left: 24%;
+    margin-left: 20%;
     margin-right: 5%;
 }
 .but{
     background-color: bisque;
 margin-left: 100px;
 margin-top: 50px;
-margin-left: 100px;
+margin-left: 75px;
 width: 100px;
 height: 50px;
 
