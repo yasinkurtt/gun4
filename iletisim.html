@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="baslik"> Türkiye İlleri </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="sehirler.html"> Şehirler</a></li>
+            
+            <li><a href="iletisim.html"> İletişim</a></li>
+
+        </ul>
+
+    </nav>
+    <div class="girisdiv">
+        <img src="images.jpg" alt="">
+    <h4>KULLANICI ADI :</h4
+    <br><input type="text" id="isim">
+    <br>
+    <h4>ŞİFRE :</h4> <br><input type="password" id="parola"> <br>
+    <button class="but" type="button" onclick="kaydet()">kayıt ol </button>
+<button class="but" type="button" onclick="kontrol()"> giris yap</button>
+</div>
+    <script>
+       function kontrol(){
+        if(localStorage.getItem('parola')==document.getElementById("parola").value &&
+        localStorage.getItem('isim')==document.getElementById("isim").value ){
+            alert("giriş başarılı");
+        }
+        else {
+            alert("giriş başaraısız");
+        }
+        }
+        function kaydet(){
+            var isim = document.getElementById("isim").value;
+            var parola = document.getElementById("parola").value;
+            localStorage.setItem('isim', isim);
+            localStorage.setItem('parola', parola);
+            
+        }
+    </script>
+
+</button>
+<footer>
+    <p class="text-2">Yasin Kurt |   
+           
+        Şeymanur Akbaş |
+        Nurullah Işık
+        &copy; 2022 
+    </p>
+    
+    
+</footer>
+</body>
+</html>
